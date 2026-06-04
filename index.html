@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Base NFT</title>
+<title>Base Wallet Checker</title>
 </head>
 
 <body style="text-align:center;font-family:Arial;margin-top:80px;">
 
-<h1>🚀 My Base NFT Project</h1>
+<h1>🚀 Base Wallet Checker</h1>
 
-<p>
-Contract:
-<br>
-0xA8f77aB6a2abF65eab147b6D9A47F191A7753b60
-</p>
+<input id="wallet"
+placeholder="Enter Wallet Address"
+style="width:300px;padding:10px;">
 
-<p>Network: Base</p>
+<br><br>
 
-<p>NFT ID: 2</p>
-
-<a href="https://opensea.io/item/base/0xa8f77ab6a2abf65eab147b6d9a47f191a7753b60/2"
-target="_blank">
-
-<button>
-View NFT on OpenSea
+<button onclick="checkWallet()">
+Check Wallet
 </button>
 
-</a>
+<p id="result"></p>
+
+<script>
+function checkWallet() {
+
+let address =
+document.getElementById("wallet").value;
+
+document.getElementById("result").innerHTML =
+"Wallet Checked:<br>" + address;
+
+}
+</script>
 
 </body>
 </html>
