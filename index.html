@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hello Base</title>
+<title>Base Mini App</title>
 </head>
-<body>
-  <h1>Hello Base 🚀</h1>
-  <p>My first Base mini app.</p>
+<body style="text-align:center;font-family:Arial;margin-top:100px;">
+
+<h1>🚀 Base Mini App</h1>
+
+<button onclick="connectWallet()">
+Connect Wallet
+</button>
+
+<p id="wallet"></p>
+
+<script>
+function connectWallet() {
+document.getElementById("wallet").innerHTML =
+"Wallet connected successfully!";
+}
+</script>
+
 </body>
 </html>
